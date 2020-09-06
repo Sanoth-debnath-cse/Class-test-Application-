@@ -1,0 +1,158 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{9D57201E-2E42-47B4-B2F4-79E728C88B38}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ClassTest_Application</RootNamespace>
+    <AssemblyName>ClassTest_Application</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>x64</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="MetroFramework">
+      <HintPath>F:\5th s\C# project\Database MultipleChoice\MultipleChoice\MultipleChoice\bin\Debug\MetroFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="MySql.Data, Version=8.0.12.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>F:\4th semester\phonebook\New folder\mysql(xampp)\MySql.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="center.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="center.Designer.cs">
+      <DependentUpon>center.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Exam Paper.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Exam Paper.Designer.cs">
+      <DependentUpon>Exam Paper.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Set Exam Paper_2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Set Exam Paper_2.Designer.cs">
+      <DependentUpon>Set Exam Paper_2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SetExamPaper.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SetExamPaper.Designer.cs">
+      <DependentUpon>SetExamPaper.cs</DependentUpon>
+    </Compile>
+    <Compile Include="student_login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="student_login.Designer.cs">
+      <DependentUpon>student_login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SplashScreen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SplashScreen.designer.cs">
+      <DependentUpon>SplashScreen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Student_register.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Student_register.Designer.cs">
+      <DependentUpon>Student_register.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Teacher_signup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Teacher_signup.Designer.cs">
+      <DependentUpon>Teacher_signup.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="center.resx">
+      <DependentUpon>center.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Exam Paper.resx">
+      <DependentUpon>Exam Paper.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Set Exam Paper_2.resx">
+      <DependentUpon>Set Exam Paper_2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SetExamPaper.resx">
+      <DependentUpon>SetExamPaper.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="student_login.resx">
+      <DependentUpon>student_login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="SplashScreen.resx">
+      <DependentUpon>SplashScreen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Student_register.resx">
+      <DependentUpon>Student_register.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Teacher_signup.resx">
+      <DependentUpon>Teacher_signup.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
